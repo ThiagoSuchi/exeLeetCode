@@ -7,8 +7,8 @@ type F = (x: number) => number;
 function compose(functions: F[]): F {
 
     return function (x) {
-        if (functions.length === 0 ) return x
-        
+        if (functions.length === 0) return x
+
         return functions.reduceRight((acc, fn) => fn(acc), x)// Como o valor inicial é x = 4, o acc sera
     }
 }
