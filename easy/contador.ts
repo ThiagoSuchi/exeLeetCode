@@ -21,6 +21,6 @@ const calls = [
     'call','call','call'
 ];
 
-const result = calls.map(() => count());
+const result1 = calls.map(() => count());
 
-console.log(result);
+console.log(result1);

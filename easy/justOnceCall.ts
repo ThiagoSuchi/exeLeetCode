@@ -19,7 +19,7 @@ function once(fn: Function): OnceFn {
 }
 
 
-let fn: OnceFn = (a, b, c) => {
+let fun: OnceFn = (a, b, c) => {
     if (
         typeof a === "number" && 
         typeof b === "number" && 
@@ -30,7 +30,7 @@ let fn: OnceFn = (a, b, c) => {
     return undefined;
 }
 
-let onceFn = once(fn);
+let onceFn = once(fun);
 
 console.log(onceFn(1, 2, 3));
 console.log(onceFn(1, 2, 3));
